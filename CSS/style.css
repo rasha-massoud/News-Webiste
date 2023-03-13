@@ -62,3 +62,16 @@ a:visited {
     margin-top: 5px;
     margin-bottom: 0;
 }
+
+#homePanel,
+#newsPanel,
+#fashionPanel,
+#livePanel,
+#morePanel {
+    display: none;
+}
+
+.toggleFlip {
+    display: flex;
+    flex-direction: column;
+}

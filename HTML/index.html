@@ -14,16 +14,30 @@
         <img class="navLogo" src="/FrontEnd/Images/Logo2.jpg">
         <div class="navOptions">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Fashion</a></li>
-                <li><a href="#">Live</a></li>
-                <li><a href="#">More</a></li>
+                <li class="toggleFlip" id="home"><a href="#">Home</a>
+                    <div id="homePanel">About us!</div>
+                </li>
+
+                <li class="toggleFlip" id="news"><a href="#">News</a>
+                    <div id="newsPanel">Global News</div>
+                </li>
+
+                <li id="fashion"><a href="#">Fashion</a>
+                    <div id="fashionPanel">Trends</div>
+                </li>
+
+                <li id="live"><a href="#">Live</a>
+                    <div id="livePanel">Programs</div>
+                </li>
+
+                <li id="more"><a href="#">More</a>
+                    <div id="morePanel">Contact Us</div>
+                </li>
             </ul>
         </div>
     </nav>
     <div id="news-container">
-	</div>
+    </div>
 
     <script src="/FrontEnd/JS/axios.min.js"></script>
     <script src="/FrontEnd/JS/jquery-3.6.4.js" type="text/javascript"></script>
