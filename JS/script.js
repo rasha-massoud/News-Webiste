@@ -16,13 +16,14 @@ $(document).ready(function () {
         $("#morePanel").slideToggle("slow");
     });
 
-
-    // make an Ajax request to the PHP API
     $.ajax({
-        url: "news_api.php",
+        url: "http://localhost/News Website/BackEnd/articles.php",
         type: "GET",
         dataType: "json",
         success: function (news) {
+            console.log(news);
+            console.log("HIIII")
+
             // iterate through the news data and display it on the page
             $.each(news, function (index, item) {
                 var newsItem = "<div class='news-item'>" +
@@ -32,9 +33,6 @@ $(document).ready(function () {
                     "</div>";
                 $("#news-container").append(newsItem);
             });
-        },
-        error: function (xhr, status, error) {
-            console.error(xhr.responseText);
         }
     });
 });
