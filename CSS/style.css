@@ -47,19 +47,24 @@ a:visited {
 }
 
 .news-item {
-    margin-bottom: 20px;
+    margin-bottom: 4%;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
+    padding-bottom: 4%;
 }
 
 .news-item h2 {
     margin-top: 0;
 }
 
+.news-item img {
+    width: 45%;
+    height: 45%;
+}
+
 .news-date {
     font-style: italic;
     color: #999;
-    margin-top: 5px;
+    margin-top: 2%;
     margin-bottom: 0;
 }
 

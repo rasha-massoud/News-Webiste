@@ -21,17 +21,16 @@ $(document).ready(function () {
         type: "GET",
         dataType: "json",
         success: function (news) {
-            console.log(news);
-            console.log("HIIII")
-
-            // iterate through the news data and display it on the page
             $.each(news, function (index, item) {
                 var newsItem = "<div class='news-item'>" +
-                    "<h2>" + item.title + "</h2>" +
-                    "<p>" + item.content + "</p>" +
-                    "<p class='news-date'>" + item.created_at + "</p>" +
+                    "<h2>" + item.id + "</h2>" +
+                    "<h2>" + item.article_name + "</h2>" +
+                    "<img src='" + item.img_url + "' />" +
+                    "<p>" + item.description + "</p>" +
+                    "<a href='" + item.website + "'>" + item.website + "</a>" + 
                     "</div>";
                 $("#news-container").append(newsItem);
+                $(".news-item").last().hide().fadeIn(4000);
             });
         }
     });
